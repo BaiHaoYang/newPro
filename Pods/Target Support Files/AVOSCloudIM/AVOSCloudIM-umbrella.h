@@ -24,11 +24,11 @@
 #import "AVIMClient.h"
 #import "AVIMCommon.h"
 #import "AVIMConversation.h"
-#import "AVIMConversationMemberInfo.h"
 #import "AVIMMessage.h"
 #import "AVIMSignature.h"
 #import "AVIMAvailability.h"
 #import "AVIMOptions.h"
+#import "AVIMConversationMemberInfo.h"
 #import "AVOSCloudIM.h"
 #import "AVIMUserOptions.h"
 

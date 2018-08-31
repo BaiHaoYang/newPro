@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <AVOSCloud/AVOSCloud.h>
+#import <BmobSDK/Bmob.h>
 @interface AppDelegate ()
 
 @end
@@ -16,13 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self initAVOS:launchOptions];
+    [Bmob registerWithAppKey:@"申请的Application ID"];
     return YES;
 }
-- (void)initAVOS:(NSDictionary *)launchOptions{
-    [AVOSCloud setApplicationId:@"rPFExPW31aXdfHuv0Ia0pf02-gzGzoHsz" clientKey:@"P9pqYFfjaL9GNXBPHu2i7bE9"];
-    [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

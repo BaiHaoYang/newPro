@@ -150,13 +150,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HYBNetworking/HYBNetworking.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZFPlayer/ZFPlayer.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
@@ -166,13 +164,11 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HYBNetworking/HYBNetworking.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZFPlayer/ZFPlayer.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
