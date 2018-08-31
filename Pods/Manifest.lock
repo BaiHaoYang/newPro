@@ -15,15 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - AVOSCloud (11.2.2)
-  - AVOSCloudIM (11.2.2):
-    - AVOSCloud (= 11.2.2)
-    - AVOSCloudIM/_ARC (= 11.2.2)
-    - AVOSCloudIM/_NOARC (= 11.2.2)
-  - AVOSCloudIM/_ARC (11.2.2):
-    - AVOSCloud (= 11.2.2)
-    - AVOSCloudIM/_NOARC (= 11.2.2)
-  - AVOSCloudIM/_NOARC (11.2.2):
-    - AVOSCloud (= 11.2.2)
+  - Bugly (2.5.0)
   - ESPictureBrowser (0.4.4):
     - YYWebImage (~> 1.0.5)
   - FLAnimatedImage (1.0.12)
@@ -31,6 +23,9 @@ PODS:
   - HYBNetworking (3.3.1):
     - AFNetworking (~> 3.1.0)
   - MJRefresh (3.1.15.3)
+  - RongCloudIM/IMKit (2.8.32):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (2.8.32)
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
@@ -40,6 +35,8 @@ PODS:
   - UMCAnalytics (5.5.0):
     - UMCCommon
   - UMCCommon (1.5.2)
+  - UMCPush (3.2.2):
+    - UMCCommon
   - UMCSecurityPlugins (1.0.6)
   - YYCache (1.0.4)
   - YYImage (1.0.4):
@@ -51,31 +48,36 @@ PODS:
 
 DEPENDENCIES:
   - AVOSCloud
-  - AVOSCloudIM
+  - Bugly
   - ESPictureBrowser
   - FLAnimatedImage (~> 1.0)
   - HMSegmentedControl
   - HYBNetworking (~> 3.3.0)
   - MJRefresh (~> 3.1.15.3)
+  - RongCloudIM/IMKit (~> 2.8.3)
+  - RongCloudIM/IMLib (~> 2.8.3)
   - SDWebImage (~> 4.3.0)
   - SDWebImage/GIF
   - UMCAnalytics
   - UMCCommon
+  - UMCPush
   - UMCSecurityPlugins
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - AVOSCloud
-    - AVOSCloudIM
+    - Bugly
     - ESPictureBrowser
     - FLAnimatedImage
     - HMSegmentedControl
     - HYBNetworking
     - MJRefresh
+    - RongCloudIM
     - SDWebImage
     - UMCAnalytics
     - UMCCommon
+    - UMCPush
     - UMCSecurityPlugins
     - YYCache
     - YYImage
@@ -84,20 +86,22 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   AVOSCloud: 5dac17ca0e33dad232372564f3d3d175443c943f
-  AVOSCloudIM: f0a8918c87b368a710c1db01ff4546c31940d993
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   ESPictureBrowser: 2e9bb9dd2fc3c26a42d535e06df49981c5a8a2e2
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
   HYBNetworking: 5b350e2eacfbf6db7d3f4253274b2f2bb68e881c
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  RongCloudIM: 48bfc2fcb8d7cae8ce1e19cb5fb26d6d90616375
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   UMCAnalytics: 4667788559a72f2fa5077117d1b8802a3b6eb6bb
   UMCCommon: 4392868ac47ff1b101663106bb114ba616fabbad
+  UMCPush: 5ab89bdbcc1fe90b1c669ff79213b44dc4821ec5
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: d47a7f4af32a5046a58aa76a57ff9109759de3b6
+PODFILE CHECKSUM: b42b0524787d7cf058127057ae83527c4400ae18
 
 COCOAPODS: 1.5.3

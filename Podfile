@@ -9,9 +9,11 @@
     pod 'SDWebImage', '~> 4.3.0'
     pod 'SDWebImage/GIF'
     pod 'ESPictureBrowser'
+    pod 'UMCPush'
     pod 'UMCCommon'
     pod 'UMCSecurityPlugins'
     pod 'UMCAnalytics'
     pod 'FLAnimatedImage', '~> 1.0'
     pod 'HMSegmentedControl'
+    pod 'Bugly'
     end

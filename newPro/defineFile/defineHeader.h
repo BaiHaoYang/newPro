@@ -40,7 +40,9 @@
 
 #define UMAppKey @"5aab9bada40fa30fb50001b2"
 
-#define BMOBApid @"64716e5c7d5e5c3e8cff996edbe8b3c4"
+#define BMOBApid @"270c0afe7650f39a017ff73b92712e6d"
+#define Buglyid @"d74a18a3ef"
+
 #define RestAoid @"85acdfc2ef815a4f60c0ec79113fb217"
 #define SECRETKey @"57b6fcc9d5133bbf"
 #define masterKey @"08486948d76c59e8d50106a867310661"
