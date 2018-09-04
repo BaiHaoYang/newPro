@@ -7,10 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 #import <BmobSDK/Bmob.h>
 #import <UMCommon/UMCommon.h>
 #import <UMPush/UMessage.h>
 #import <Bugly/Bugly.h>
+#import <RongIMKit/RongIMKit.h>
 @interface AppDelegate ()<UNUserNotificationCenterDelegate>
 
 @end
@@ -22,10 +24,22 @@
     [UMConfigure initWithAppkey:UMAppKey channel:@"App Store"];
     [self setBuglyinfo];
     [self initWithUmengPush:launchOptions];
-    [UMessage setBadgeClear:YES];
-    [UMessage setAutoAlert:YES];
-   
+    [self initRongYun:launchOptions];
+    [self loginWithRongYun];
+    [self initNavigation];
     return YES;
+}
+- (void)initNavigation{
+    UIWindow *window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window = window;
+  
+    
+    ViewController *v = [[ViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:v];
+    self.window.rootViewController  = nav;
+    
+    [window makeKeyAndVisible];
+    
 }
 - (void)setBuglyinfo{
     BuglyConfig * config = [[BuglyConfig alloc] init];
@@ -50,6 +64,22 @@
         if (granted) {
         }else{
         }
+    }];
+    [UMessage setBadgeClear:YES];
+    [UMessage setAutoAlert:YES];
+}
+- (void)initRongYun:(NSDictionary *)launchOptions{
+    [[RCIM sharedRCIM] initWithAppKey:RongYunID];
+}
+- (void)loginWithRongYun{
+    [[RCIM sharedRCIM] connectWithToken:@"/TMpwhUQvrqk9tD/Lid46AINo9aSn58TqNaPEkzg6pLhWg2vz+LYyDLbrle+uMSXcbcQZEihoA0lURfXGMbV472vEyy8EPLW"     success:^(NSString *userId) {
+        NSLog(@"登陆成功。当前登录的用户ID：%@", userId);
+        [[RCIM sharedRCIM] setEnabledReadReceiptConversationTypeList:@[@"1"]];
+        [RCIM sharedRCIM].disableMessageAlertSound = NO;
+    } error:^(RCConnectErrorCode status) {
+        NSLog(@"登陆的错误码为:%d", status);
+    } tokenIncorrect:^{
+        NSLog(@"token错误");
     }];
 }
 //iOS10以下使用这两个方法接收通知

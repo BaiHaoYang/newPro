@@ -42,6 +42,7 @@
 
 #define BMOBApid @"270c0afe7650f39a017ff73b92712e6d"
 #define Buglyid @"d74a18a3ef"
+#define RongYunID @"uwd1c0sxup2i1"
 
 #define RestAoid @"85acdfc2ef815a4f60c0ec79113fb217"
 #define SECRETKey @"57b6fcc9d5133bbf"
